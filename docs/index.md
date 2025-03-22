@@ -2,10 +2,11 @@
 home: true
 # heroImage: /img/web.png
 heroText: 秋水观 | Emanatism
-tagline: 有客问洪河，百川灌雨，泾流不辨涯涘。  
-于是焉河伯欣然喜。以天下之美尽在己。  
-渺沧溟望洋东视。逡巡向若惊叹谓我非逢子。  
-大方达观之家未免长见犹然笑耳。
+tagline: |
+  有客问洪河，百川灌雨，泾流不辨涯涘。
+  于是焉河伯欣然喜。以天下之美尽在己。
+  渺沧溟望洋东视。逡巡向若惊叹谓我非逢子。
+  大方达观之家未免长见犹然笑耳。
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: '/img/bg_ekt.jpg' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
