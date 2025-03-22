@@ -13,9 +13,19 @@ jobs:
     steps:
     - name: Checkout main branch
       uses: actions/checkout@v4
+    
+    - name: Cache Node Modules # 缓存依赖（关键优化）
+      uses: actions/cache@v3
+      with:
+        path: |
+          node_modules
+          ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
 
     - name: Install Dependencies
-      run: npm install  # 你的项目依赖安装命令（与 deploy.sh 一致）
+      run: npm install --prefer-offline  # 你的项目依赖安装命令（与 deploy.sh 一致）；优先使用缓存
 
     - name: Build Project
       run: npm run build # 构建命令（与 deploy.sh 一致）
