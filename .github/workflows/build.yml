@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ] # 主分支触发
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许写入仓库
+
+    steps:
+    - name: Checkout main branch
+      uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: npm install  # 你的项目依赖安装命令（与 deploy.sh 一致）
+
+    - name: Build Project
+      run: npm run build # 构建命令（与 deploy.sh 一致）
+      # 可选：添加环境变量（例如 API Key）
+      # env:
+      #   VUE_APP_API_KEY: ${{ secrets.API_KEY }}
+
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/.vuepress/dist  # 关键修改：指向你的实际构建目录
+        # 可选：指定目标分支（默认已是 gh-pages，无需修改）
+        publish_branch: gh-pages
