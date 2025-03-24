@@ -1,5 +1,5 @@
 ---
-home: true
+home: true # 表示这是首页
 # heroImage: /img/web.png
 heroText: 秋水观 | Emanatism
 tagline: |

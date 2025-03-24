@@ -13,7 +13,16 @@ module.exports = {
   themeConfig: {
     // 导航配置
     nav: [
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
+      {
+        text: '杂学',
+        link: '/heap/',
+        items: [
+          { text: 'Linux', link: '/Linux/References/' },
+          // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
+          // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
+        ],
+      },
       {
         text: '前端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
