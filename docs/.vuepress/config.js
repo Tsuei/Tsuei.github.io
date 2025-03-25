@@ -18,7 +18,8 @@ module.exports = {
         text: '杂学',
         link: '/heap/',
         items: [
-          { text: 'Linux', link: '/Linux/References/' },
+          { text: 'Linux参考', link: '/Linux/References/' },
+          { text: '《精神现象学》速通', link: '/Philosophy/PhenoSiprit/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
