@@ -19,8 +19,9 @@ module.exports = {
         link: '/heap/',
         items: [
           { text: 'Linux参考', link: '/Linux/References/' },
-          { text: '《精神现象学》速通', link: '/Philosophy/PhenoSiprit/' },
+          { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
           { text: '时间观', link: '/Praxis/Time/' },
+          { text: '论记忆', link: '/Philosophy/Memory/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
