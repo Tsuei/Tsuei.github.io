@@ -22,6 +22,7 @@ module.exports = {
           { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
           { text: '时间观', link: '/Praxis/Time/' },
           { text: '论记忆', link: '/Philosophy/Memory/' },
+          { text: '视频下载器', link: '/Download_Videos/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
