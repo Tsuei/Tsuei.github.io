@@ -23,6 +23,8 @@ module.exports = {
           { text: '时间观', link: '/Praxis/Time/' },
           { text: '论记忆', link: '/Philosophy/Memory/' },
           { text: '视频下载器', link: '/Download_Videos/' },
+          { text: 'Python参考', link: '/Python/References/' },
+          { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
