@@ -18,13 +18,20 @@ module.exports = {
         text: '杂学',
         link: '/heap/',
         items: [
-          { text: 'Linux参考', link: '/Linux/References/' },
+          {
+            text: 'Linux',
+            items: [
+              { text: 'Linux参考', link: '/Linux/References/' },
+              { text: 'Linux笔记', link: '/Linux/Note/' },
+            ],
+          },
           { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
           { text: '时间观', link: '/Praxis/Time/' },
           { text: '论记忆', link: '/Philosophy/Memory/' },
           { text: '视频下载器', link: '/Download_Videos/' },
           { text: 'Python参考', link: '/Python/References/' },
           { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
+          { text: '精神分析参考', link: '/Psychoanalysis/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
