@@ -24,22 +24,29 @@ module.exports = {
               { text: 'Linux参考', link: '/Linux/References/' },
               { text: 'Linux笔记', link: '/Linux/Note/' },
             ],
-          },          {
+          },
+          {
             text: '哲学',
             items: [
               { text: '卷首语及谱系图', link: '/Philosophy/Index/' },
               { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
               { text: '论记忆', link: '/Philosophy/Memory/' },
+              { text: '黑格尔体系结构', link: '/Philosophy/Hegel/' },
             ],
           },
-          { text: '时间观', link: '/Praxis/Time/' },
-          { text: '视频下载器', link: '/Download_Videos/' },
-          { text: 'Python参考', link: '/Python/References/' },
-          { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
-          { text: '精神分析参考', link: '/psycho/References/' },
-          { text: '经济学草稿', link: '/Economics/' },
+          {
+            text: '待分类',
+            items: [
+              { text: '时间观', link: '/Praxis/Time/' },
+              { text: '视频下载器', link: '/Download_Videos/' },
+              { text: 'Python参考', link: '/Python/References/' },
+              { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
+              { text: '精神分析参考', link: '/psycho/References/' },
+              { text: '经济学草稿', link: '/Economics/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
+            ],
+          },
         ],
       },
       {
