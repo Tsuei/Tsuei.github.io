@@ -37,7 +37,7 @@ module.exports = {
           { text: 'Python参考', link: '/Python/References/' },
           { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
           { text: '精神分析参考', link: '/psycho/References/' },
-          { text: '经济学', link: '/Economics/' },
+          { text: '经济学草稿', link: '/Economics/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
         ],
