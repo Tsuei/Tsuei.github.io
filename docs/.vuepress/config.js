@@ -48,6 +48,7 @@ module.exports = {
             items: [
               { text: 'Linux参考', link: '/Linux/References/' },
               { text: 'Linux笔记', link: '/Linux/Note/' },
+              { text: 'Linux内C开发', link: '/Linux/C/' },
             ],
           },
           {
