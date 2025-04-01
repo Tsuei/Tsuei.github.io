@@ -19,6 +19,13 @@ module.exports = {
         link: '/heap/',
         items: [
           {
+            text: '辩证唯物主义',
+            items: [
+              { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
+              { text: '时间观', link: '/Praxis/Time/' },
+            ],
+          },
+          {
             text: '哲学',
             items: [
               { text: '卷首语及谱系图', link: '/Philosophy/Index/' },
@@ -30,8 +37,6 @@ module.exports = {
           {
             text: '待分类',
             items: [
-              { text: '时间观', link: '/Praxis/Time/' },
-              { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
               { text: '精神分析参考', link: '/psycho/References/' },
               { text: '经济学草稿', link: '/Economics/' },
               { text: '询唤学习法', link: '/Ideology/Learn/' },
