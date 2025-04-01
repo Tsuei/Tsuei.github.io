@@ -2,7 +2,9 @@
 home: true # 表示这是首页
 # heroImage: /img/web.png
 heroText: 秋水观 | Emanatism
-tagline: 孤绝当中自我立法
+tagline: |
+  孤绝当中自我立法
+  实践扬弃现实秩序
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: '/img/bg_ekt.png' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
