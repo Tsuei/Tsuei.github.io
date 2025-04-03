@@ -6,7 +6,7 @@ module.exports = {
   // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   title: "秋水观 | Emanatism",
-  description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+  description: '个人笔记站及知识堆放库',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
@@ -21,7 +21,7 @@ module.exports = {
           {
             text: '辩证唯物主义',
             items: [
-              { text: '索引', link: '/Praxis/Index/' },
+              { text: '大纲', link: '/Praxis/Outline/' },
               { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
               { text: '时间观', link: '/Praxis/Time/' },
             ],
@@ -29,17 +29,17 @@ module.exports = {
           {
             text: '哲学',
             items: [
-              { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
-              { text: '论记忆', link: '/Philosophy/Memory/' },
-              { text: '黑格尔体系结构', link: '/Philosophy/Hegel/' },
+              { text: '绝对唯心论', link: '/Philosophy/Hegel/' },
+              { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
+              { text: '精神哲学·记忆', link: '/Philosophy/Memory/' },
             ],
           },
           {
-            text: '符号学',
+            text: '意识形态批判',
             items: [
               { text: '精神分析参考', link: '/Psycho/References/' },
               { text: '经济学草稿', link: '/Economics/' },
-              { text: '询唤学习法', link: '/Ideology/Learn/' },
+              { text: '现代性批判', link: '/Ideology/' },
             ],
           },
         ],
