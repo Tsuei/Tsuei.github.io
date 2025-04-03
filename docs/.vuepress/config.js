@@ -48,6 +48,7 @@ module.exports = {
         text: '诸术',
         link: '/stack/',
         items: [
+          { text: '本站开发日志', link: '/Journal/' },
           {
             text: 'Linux',
             items: [
