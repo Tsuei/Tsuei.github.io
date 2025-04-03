@@ -21,6 +21,7 @@ module.exports = {
           {
             text: '辩证唯物主义',
             items: [
+              { text: '索引', link: '/Praxis/Index/' },
               { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
               { text: '时间观', link: '/Praxis/Time/' },
             ],
@@ -28,16 +29,15 @@ module.exports = {
           {
             text: '哲学',
             items: [
-              { text: '卷首语及谱系图', link: '/Philosophy/Index/' },
               { text: '速通《精神现象学》', link: '/Philosophy/PhenoSiprit/' },
               { text: '论记忆', link: '/Philosophy/Memory/' },
               { text: '黑格尔体系结构', link: '/Philosophy/Hegel/' },
             ],
           },
           {
-            text: '待分类',
+            text: '符号学',
             items: [
-              { text: '精神分析参考', link: '/psycho/References/' },
+              { text: '精神分析参考', link: '/Psycho/References/' },
               { text: '经济学草稿', link: '/Economics/' },
               { text: '询唤学习法', link: '/Ideology/Learn/' },
             ],
