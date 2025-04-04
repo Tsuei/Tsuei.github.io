@@ -268,6 +268,8 @@ module.exports = {
 
   // 插件配置
   plugins: [
+    'vuepress-plugin-katex', // 启用 KaTeX 插件
+    
     // 本地插件（供学习）
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
     //   color: '#11a8cd', // 爱心颜色，默认随机色
