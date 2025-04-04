@@ -1,3 +1,5 @@
+import katex from 'vuepress-plugin-katex'
+
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
@@ -12,7 +14,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
     // mathjax: true, // 启用Mathjax数学公式支持，但我只装配了KaTeX，所以这行会报错
-    math: true, // 启用数学公式支持
+    // math: true, // 启用数学公式支持
     
     // 导航配置
     nav: [
@@ -249,10 +251,10 @@ module.exports = {
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js' }],
-    //引入KaTeX的CDN
+    // ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js' }],
+    // ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js' }],
+    // 引入KaTeX的CDN（已废弃，未成功渲染LaTeX公式）
 
     ['link', { rel: 'icon', href: '/img/favicon_ekt.ico' }], //favicons，资源放在public文件夹
     [
@@ -276,7 +278,8 @@ module.exports = {
 
   // 插件配置
   plugins: [
-    'vuepress-plugin-katex', // 启用 KaTeX 插件
+    // 'vuepress-plugin-katex', // （VuePress 1 写法，2.x 中可能失效）启用 KaTeX 插件
+    katex(),
     
     // 本地插件（供学习）
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
