@@ -1,4 +1,4 @@
-import katex from 'vuepress-plugin-katex'
+const katex = require('vuepress-plugin-katex') // import katex from 'vuepress-plugin-katex' 是 .ts 写法
 
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
