@@ -11,7 +11,9 @@ module.exports = {
 
   // 主题配置
   themeConfig: {
-    mathjax: true, // 启用Mathjax数学公式支持
+    // mathjax: true, // 启用Mathjax数学公式支持，但我只装配了KaTeX，所以这行会报错
+    math: true, // 启用数学公式支持
+    
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
