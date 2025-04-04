@@ -249,6 +249,11 @@ module.exports = {
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js' }],
+    //引入KaTeX的CDN
+
     ['link', { rel: 'icon', href: '/img/favicon_ekt.ico' }], //favicons，资源放在public文件夹
     [
       'meta',
