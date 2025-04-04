@@ -1,4 +1,5 @@
-const katex = require('vuepress-plugin-katex').default // import katex from 'vuepress-plugin-katex' 是 .ts 写法
+// const katex = require('vuepress-plugin-katex').default // import katex from 'vuepress-plugin-katex' 是 .ts 写法
+// 以上为VuePress 2.0写法，本主题是在1.9.9上开发的（见package.json），版本不兼容
 
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
@@ -279,7 +280,8 @@ module.exports = {
   // 插件配置
   plugins: [
     // 'vuepress-plugin-katex', // （VuePress 1 写法，2.x 中可能失效）启用 KaTeX 插件
-    katex(),
+    // katex(), // 为VuePress 2.0写法，本主题是在1.9.9上开发的（见package.json），版本不兼容
+    ['vuepress-plugin-katex'],
     
     // 本地插件（供学习）
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
