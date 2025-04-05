@@ -162,7 +162,7 @@ module.exports = {
         ],
       },
     ],
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 4, // 侧边栏显示深度，默认1，最大2（显示到h3标题）// （无效）
     logo: '/img/logo.jpg', // 导航栏logo
     repo: 'tsuei/tsuei.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -400,11 +400,13 @@ module.exports = {
     ],
   ],
   
-  markdown: {
-    lineNumbers: true,
-    anchor: { permalink: false },
-    toc: {includeLevel: [1,2]},
-    extendMarkdown: md => {
+  markdown: { //抄自 https://blog.csdn.net/m0_50488756/article/details/123799709
+    lineNumbers: true, // 代码块显示行号
+    anchor: { permalink: true }, // 是否生成标题锚点 参见 https://vuepress.vuejs.org/zh/guide/markdown.html#标题锚点
+    toc: {includeLevel: [1,2,3,4,5,6]}, // [[toc]]命令生成的目录块包含几级标题
+    extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ], // 目录栏支持几级标题 来自 https://doc.xugaoyi.com/pages/8dfab5/
+    // extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ],
+    extendMarkdown: md => { // Markdown渲染器扩展
       md.use(require('markdown-it-texmath'))
     }
   }
