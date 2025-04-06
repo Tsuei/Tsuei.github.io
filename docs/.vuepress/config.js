@@ -43,7 +43,7 @@ module.exports = {
           {
             text: '意识形态批判',
             items: [
-              { text: '精神分析参考', link: '/Psycho/References/' },
+              { text: '精神分析参考', link: '/Psychoanalysis/' },
               { text: '经济学草稿', link: '/Economics/' },
               { text: '现代性批判', link: '/Ideology/' },
             ],
@@ -403,7 +403,7 @@ module.exports = {
   markdown: { //抄自 https://blog.csdn.net/m0_50488756/article/details/123799709
     lineNumbers: true, // 代码块显示行号
     anchor: { permalink: true }, // 是否生成标题锚点 参见 https://vuepress.vuejs.org/zh/guide/markdown.html#标题锚点
-    toc: {includeLevel: [1,2,3,4,5,6]}, // [[toc]]命令生成的目录块包含几级标题
+    toc: {includeLevel: [1,2,3,4,5,6]}, // [[toc]]命令生成的目录块包含几级标题 https://vuepress.vuejs.org/zh/guide/markdown.html#目录
     extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ], // 目录栏支持几级标题 来自 https://doc.xugaoyi.com/pages/8dfab5/
     // extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ],
     extendMarkdown: md => { // Markdown渲染器扩展
