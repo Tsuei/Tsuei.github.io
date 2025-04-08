@@ -27,7 +27,7 @@ module.exports = {
           {
             text: '辩证唯物主义',
             items: [
-              { text: '大纲', link: '/Praxis/Outline/' },
+              { text: '思想链表', link: '/Praxis/List/' },
               { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
               { text: '时间观', link: '/Praxis/Time/' },
             ],
