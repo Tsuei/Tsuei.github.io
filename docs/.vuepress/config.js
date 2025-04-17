@@ -38,6 +38,7 @@ module.exports = {
               { text: '绝对唯心论', link: '/Philosophy/Hegel/' },
               { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
               { text: '精神哲学·记忆', link: '/Philosophy/Memory/' },
+              { text: '《友谊》', link: '/Freundschaft/' },
             ],
           },
           {
@@ -67,7 +68,7 @@ module.exports = {
             text: '待分类',
             items: [
               { text: '视频下载器', link: '/Download_Videos/' },
-              { text: 'Python参考', link: '/Python/References/' },
+              { text: 'Python', link: '/Python/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
             ],
