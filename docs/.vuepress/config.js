@@ -36,9 +36,9 @@ module.exports = {
             text: '哲学',
             items: [
               { text: '绝对唯心论', link: '/Philosophy/Hegel/' },
-              { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
-              { text: '精神哲学·记忆', link: '/Philosophy/Memory/' },
-              { text: '《友谊》', link: '/Freundschaft/' },
+              { text: '评精神现象学', link: '/Philosophy/PhenoSiprit/' },
+              { text: '论记忆', link: '/Philosophy/Memory/' },
+              { text: '论时间', link: '/Philosophy/Time/' },
             ],
           },
           {
@@ -324,7 +324,7 @@ module.exports = {
           },
           {
             title: '通过百度搜索本站的',
-            frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+            frontUrl: 'https://www.baidu.com/s?wd=site%3Atsuei.github.io%20', // 没用，站点未被百度收录
           },
         ],
       },
@@ -404,9 +404,9 @@ module.exports = {
   markdown: { //抄自 https://blog.csdn.net/m0_50488756/article/details/123799709
     lineNumbers: true, // 代码块显示行号
     anchor: { permalink: true }, // 是否生成标题锚点 参见 https://vuepress.vuejs.org/zh/guide/markdown.html#标题锚点
-    toc: {includeLevel: [1,2,3,4,5]}, // [[toc]]命令生成的目录块包含几级标题 https://vuepress.vuejs.org/zh/guide/markdown.html#目录
+    toc: {includeLevel: [1,2,3,4]}, // [[toc]]命令生成的目录块包含一、二、三、四级标题 https://vuepress.vuejs.org/zh/guide/markdown.html#目录
   //toc: {includeLevel: [1,2,3,4,5,6]},
-    extractHeaders: [ 'h2', 'h3', 'h4', 'h5' ], // 目录栏支持几级标题 来自 https://doc.xugaoyi.com/pages/8dfab5/
+    extractHeaders: [ 'h2', 'h3', 'h4' ], // 目录栏支持二、三、四级标题 来自 https://doc.xugaoyi.com/pages/8dfab5/
   //extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ],
     extendMarkdown: md => { // Markdown渲染器扩展
       md.use(require('markdown-it-texmath'))
