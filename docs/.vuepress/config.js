@@ -73,6 +73,12 @@ module.exports = {
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
             ],
           },
+          {
+            text: '数学',
+            items: [
+              { text: '代数I', link: '/Algebra/I/' },
+            ],
+          },
         ],
       },
       {
