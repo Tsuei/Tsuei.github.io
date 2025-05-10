@@ -28,25 +28,26 @@ module.exports = {
             text: '辩证唯物主义',
             items: [
               { text: '思想链表', link: '/Praxis/List/' },
-              { text: '唯物辩证法笔记', link: '/Praxis/Note/' },
+              { text: '笔记', link: '/Praxis/Note/' },
               { text: '时间观', link: '/Praxis/Time/' },
             ],
           },
           {
             text: '哲学',
             items: [
-              { text: '绝对唯心论', link: '/Philosophy/Hegel/' },
-              { text: '评精神现象学', link: '/Philosophy/PhenoSiprit/' },
-              { text: '论记忆', link: '/Philosophy/Memory/' },
-              { text: '论时间', link: '/Philosophy/Time/' },
+              { text: '黑格尔', link: '/Philosophy/Hegel/' },
+              { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
+              { text: '记忆', link: '/Philosophy/Memory/' },
+              { text: '时间', link: '/Philosophy/Time/' },
             ],
           },
           {
             text: '意识形态批判',
             items: [
-              { text: '精神分析参考', link: '/Psychoanalysis/' },
-              { text: '经济学草稿', link: '/Economics/' },
-              { text: '现代性批判', link: '/Ideology/' },
+              { text: '精神分析', link: '/Psychoanalysis/' },
+              { text: '经济学', link: '/Economics/' },
+              { text: '现代性', link: '/Ideology/' },
+              { text: '神秘学', link: '/Mysticism/' },
             ],
           },
         ],
@@ -221,7 +222,7 @@ module.exports = {
     blogger: {
       avatar: 'https://avatars.githubusercontent.com/u/47493588?v=4',
       name: 'Ektropia Tsuei',
-      slogan: '慎独。',
+      slogan: '团结紧张严肃活泼',
     },
 
     // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
