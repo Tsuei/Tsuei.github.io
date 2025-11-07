@@ -21,13 +21,20 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
       {
+        text: '流溢编',
+        link: '/book/',
+        items: [
+          { text: '在莒集', link: '/Poem/' },
+        ],
+      },
+      {
         text: '杂学',
         link: '/heap/',
         items: [
           {
             text: '辩证唯物主义',
             items: [
-              { text: '思想链表', link: '/Praxis/List/' },
+              { text: '思想矩阵', link: '/Praxis/Matrix/' },
               { text: '笔记', link: '/Praxis/Note/' },
               { text: '时间观', link: '/Praxis/Time/' },
             ],
@@ -57,6 +64,7 @@ module.exports = {
         link: '/stack/',
         items: [
           { text: '本站开发日志', link: '/Journal/' },
+          { text: '算法参考', link: '/Algorithm/' },
           {
             text: 'Linux',
             items: [
@@ -222,7 +230,7 @@ module.exports = {
     blogger: {
       avatar: 'https://avatars.githubusercontent.com/u/47493588?v=4',
       name: 'Ektropia Tsuei',
-      slogan: '团结紧张严肃活泼',
+      slogan: '再见理想', // 团结紧张严肃活泼
     },
 
     // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
@@ -411,7 +419,7 @@ module.exports = {
   markdown: { //抄自 https://blog.csdn.net/m0_50488756/article/details/123799709
     lineNumbers: true, // 代码块显示行号
     anchor: { permalink: true }, // 是否生成标题锚点 参见 https://vuepress.vuejs.org/zh/guide/markdown.html#标题锚点
-    toc: {includeLevel: [1,2,3,4]}, // [[toc]]命令生成的目录块包含一、二、三、四级标题 https://vuepress.vuejs.org/zh/guide/markdown.html#目录
+    toc: {includeLevel: [1,2,3,4,5]}, // [[toc]]命令生成的目录块包含一、二、三、四级标题 https://vuepress.vuejs.org/zh/guide/markdown.html#目录
   //toc: {includeLevel: [1,2,3,4,5,6]},
     extractHeaders: [ 'h2', 'h3', 'h4' ], // 目录栏支持二、三、四级标题 来自 https://doc.xugaoyi.com/pages/8dfab5/
   //extractHeaders: [ 'h2', 'h3', 'h4', 'h5', 'h6' ],
