@@ -24,7 +24,7 @@ module.exports = {
         text: '流溢编',
         link: '/book/',
         items: [
-          { text: '在莒集', link: '/Poem/' },
+          { text: '益卓毗阿集', link: '/Poem/' },
         ],
       },
       {
