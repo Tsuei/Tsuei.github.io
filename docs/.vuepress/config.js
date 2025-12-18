@@ -21,7 +21,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
       {
-        text: '流溢编',
+        text: '文',
         link: '/book/',
         items: [
           { text: '益卓毗阿歌詩', link: '/Poem/' },
@@ -29,7 +29,7 @@ module.exports = {
         ],
       },
       {
-        text: '杂学',
+        text: '哲',
         link: '/heap/',
         items: [
           {
@@ -61,11 +61,14 @@ module.exports = {
         ],
       },
       {
-        text: '诸术',
+        text: '工',
         link: '/stack/',
         items: [
           { text: '本站开发日志', link: '/Journal/' },
           { text: '算法参考', link: '/Algorithm/' },
+          { text: '视频下载器', link: '/Download_Videos/' },
+          { text: 'Python', link: '/Python/' },
+          { text: 'C++面向对象', link: '/cpp/' },
           {
             text: 'Linux',
             items: [
@@ -74,15 +77,8 @@ module.exports = {
               { text: 'Linux内C开发', link: '/Linux/C/' },
             ],
           },
-          {
-            text: '待分类',
-            items: [
-              { text: '视频下载器', link: '/Download_Videos/' },
-              { text: 'Python', link: '/Python/' },
           // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
           // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
-            ],
-          },
           {
             text: '数学',
             items: [
