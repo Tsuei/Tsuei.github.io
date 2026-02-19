@@ -20,14 +20,16 @@ module.exports = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      {
-        text: '文',
-        link: '/book/',
-        items: [
-          { text: '益卓毗阿歌詩', link: '/Poem/' },
-          { text: '流溢編', link: '/Note/' },
-        ],
-      },
+      { text: '揠苗集', link: '/Poem/' },
+      { text: '流溢編', link: '/Note/' },
+      // {
+      //   text: '文',
+      //   link: '/book/',
+      //   items: [
+      //     { text: '益卓毗阿歌詩', link: '/Poem/' },
+      //     { text: '流溢編', link: '/Note/' },
+      //   ],
+      // },
       {
         text: '哲',
         link: '/heap/',
