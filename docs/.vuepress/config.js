@@ -20,7 +20,7 @@ module.exports = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      { text: '揠苗集', link: '/Poem/1' },
+      { text: '揠苗集', link: '/Poem/1/' },
       { text: '流溢編', link: '/Note/' },
       // {
       //   text: '文',
