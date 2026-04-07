@@ -20,7 +20,7 @@ module.exports = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      { text: '揠苗集',
+      { text: '在莒集',
         // link: '/Poem/1/',
         items: [
           { text: '乙巳', link: '/Poem/1/' },
@@ -28,6 +28,8 @@ module.exports = {
         ],
       },
       { text: '流溢編', link: '/Note/' },
+
+      
       // {
       //   text: '文',
       //   link: '/book/',
@@ -36,65 +38,71 @@ module.exports = {
       //     { text: '流溢編', link: '/Note/' },
       //   ],
       // },
-      {
-        text: '哲',
-        link: '/heap/',
-        items: [
-          {
-            text: '辩证唯物主义',
-            items: [
-              { text: '思想矩阵', link: '/Praxis/Matrix/' },
-              { text: '笔记', link: '/Praxis/Note/' },
-              { text: '时间观', link: '/Praxis/Time/' },
-            ],
-          },
-          {
-            text: '哲学',
-            items: [
-              { text: '黑格尔', link: '/Philosophy/Hegel/' },
-              { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
-              { text: '记忆', link: '/Philosophy/Memory/' },
-              { text: '时间', link: '/Philosophy/Time/' },
-            ],
-          },
-          {
-            text: '意识形态批判',
-            items: [
-              { text: '精神分析', link: '/Psychoanalysis/' },
-              { text: '经济学', link: '/Economics/' },
-              { text: '现代性', link: '/Ideology/' },
-              { text: '神秘学', link: '/Mysticism/' },
-            ],
-          },
-        ],
-      },
-      {
-        text: '工',
-        link: '/stack/',
-        items: [
-          { text: '本站开发日志', link: '/Journal/' },
-          { text: '算法参考', link: '/Algorithm/' },
-          { text: '视频下载器', link: '/Download_Videos/' },
-          { text: 'Python', link: '/Python/' },
-          { text: 'C++面向对象', link: '/cpp/' },
-          {
-            text: 'Linux',
-            items: [
-              { text: 'Linux参考', link: '/Linux/References/' },
-              { text: 'Linux笔记', link: '/Linux/Note/' },
-              { text: 'Linux内C开发', link: '/Linux/C/' },
-            ],
-          },
-          // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
-          // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
-          {
-            text: '数学',
-            items: [
-              { text: '代数I', link: '/Algebra/I/' },
-            ],
-          },
-        ],
-      },
+
+
+
+      // {
+      //   text: '哲',
+      //   link: '/heap/',
+      //   items: [
+      //     {
+      //       text: '辩证唯物主义',
+      //       items: [
+      //         { text: '思想矩阵', link: '/Praxis/Matrix/' },
+      //         { text: '笔记', link: '/Praxis/Note/' },
+      //         { text: '时间观', link: '/Praxis/Time/' },
+      //       ],
+      //     },
+      //     {
+      //       text: '哲学',
+      //       items: [
+      //         { text: '黑格尔', link: '/Philosophy/Hegel/' },
+      //         { text: '精神现象学', link: '/Philosophy/PhenoSiprit/' },
+      //         { text: '记忆', link: '/Philosophy/Memory/' },
+      //         { text: '时间', link: '/Philosophy/Time/' },
+      //       ],
+      //     },
+      //     {
+      //       text: '意识形态批判',
+      //       items: [
+      //         { text: '精神分析', link: '/Psychoanalysis/' },
+      //         { text: '经济学', link: '/Economics/' },
+      //         { text: '现代性', link: '/Ideology/' },
+      //         { text: '神秘学', link: '/Mysticism/' },
+      //       ],
+      //     },
+      //   ],
+      // },
+      // {
+      //   text: '工',
+      //   link: '/stack/',
+      //   items: [
+      //     { text: '本站开发日志', link: '/Journal/' },
+      //     { text: '算法参考', link: '/Algorithm/' },
+      //     { text: '视频下载器', link: '/Download_Videos/' },
+      //     { text: 'Python', link: '/Python/' },
+      //     { text: 'C++面向对象', link: '/cpp/' },
+      //     {
+      //       text: 'Linux',
+      //       items: [
+      //         { text: 'Linux参考', link: '/Linux/References/' },
+      //         { text: 'Linux笔记', link: '/Linux/Note/' },
+      //         { text: 'Linux内C开发', link: '/Linux/C/' },
+      //       ],
+      //     },
+      //     // { text: 'MMD', link: '/pages/0a83b083bdf257cb/' },
+      //     // { text: '乐理', link: '/pages/0a83b083bdf257cb/' },
+      //     {
+      //       text: '数学',
+      //       items: [
+      //         { text: '代数I', link: '/Algebra/I/' },
+      //       ],
+      //     },
+      //   ],
+      // },
+
+
+
       {
         text: '前端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
