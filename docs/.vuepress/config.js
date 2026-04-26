@@ -21,7 +21,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
       { text: '在莒集',
-        // link: '/Poem/1/',
+        link: '/Poem/Preface/',
         items: [
           { text: '乙巳', link: '/Poem/1/' },
           { text: '丙午', link: '/Poem/2/' },
