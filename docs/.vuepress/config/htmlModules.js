@@ -18,6 +18,7 @@
  * ②注：windowLB 和 windowRB：1.展示区块最大宽高200px*400px。2.请给自定义元素定一个不超过200px*400px的宽高。3.在屏幕宽度小于960px时无论如何都不会显示。
  */
 
+/*
 module.exports = {
     homeSidebarB:
       `<div style="padding: 0.95rem">
@@ -108,7 +109,7 @@ module.exports = {
     //     </script>
     //     `,
   }
-  
+*/
   
   // module.exports = {
   //   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,

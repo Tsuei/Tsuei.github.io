@@ -8,8 +8,8 @@ module.exports = {
   theme: 'vdoing', // 使用npm包主题
   // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
-  title: "秋水观 | Emanatism",
-  description: '个人笔记站及知识堆放库',
+  title: "Emanatism | 秋水观",
+  description: '个人博客站兼知识库', // 个人笔记站及知识堆放库
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
@@ -20,14 +20,14 @@ module.exports = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      { text: '在莒集',
-        link: '/Poem/Preface/',
-        items: [
-          { text: '乙巳', link: '/Poem/1/' },
-          { text: '丙午', link: '/Poem/2/' },
-        ],
-      },
-      { text: '流溢編', link: '/Note/' },
+      // { text: '在莒集',
+      //   link: '/Poem/Preface/',
+      //   items: [
+      //     { text: '乙巳', link: '/Poem/1/' },
+      //     { text: '丙午', link: '/Poem/2/' },
+      //   ],
+      // },
+      // { text: '流溢編', link: '/Note/' },
 
       
       // {
@@ -203,8 +203,8 @@ module.exports = {
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
-    // category: false, // 是否打开分类功能，默认true
-    // tag: false, // 是否打开标签功能，默认true
+    category: false, // 是否打开分类功能，默认true
+    tag: false, // 是否打开标签功能，默认true
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
@@ -243,7 +243,7 @@ module.exports = {
     blogger: {
       avatar: 'https://avatars.githubusercontent.com/u/47493588?v=4',
       name: 'Ektropia Tsuei',
-      slogan: '再见理想', // 团结紧张严肃活泼
+      slogan: '', // 再见理想 // 团结紧张严肃活泼
     },
 
     // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
