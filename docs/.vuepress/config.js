@@ -20,13 +20,13 @@ module.exports = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      // { text: '在莒集',
-      //   link: '/Poem/Preface/',
+      { text: '诗文',
+        link: '/Poem/2-2/',
       //   items: [
       //     { text: '乙巳', link: '/Poem/1/' },
       //     { text: '丙午', link: '/Poem/2/' },
       //   ],
-      // },
+      },
       // { text: '流溢編', link: '/Note/' },
 
       
