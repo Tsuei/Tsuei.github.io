@@ -1,7 +1,7 @@
 ---
 home: true # 表示这是首页
 # heroImage: /img/web.png
-heroText: Emanatism | 秋水观
+heroText: Emanatism | 秋水觀
 tagline: In solitude, self-legislation. In praxis, Aufhebung.
 # actionText: 立刻进入 →
 # actionLink: /web/

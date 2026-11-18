@@ -5,10 +5,10 @@ const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
-  theme: 'vdoing', // 使用npm包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  // theme: 'vdoing', // 使用npm包主题
+  theme: require.resolve('../../vdoing'), // 使用本地主题
 
-  title: "Emanatism | 秋水观",
+  title: "Emanatism | 秋水觀",
   description: '个人博客站兼知识库', // 个人笔记站及知识堆放库
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
@@ -19,8 +19,8 @@ module.exports = {
     
     // 导航配置
     nav: [
-      { text: '首页', link: '/' }, // 首页文件位于.vuepress/index.md
-      { text: '诗文',
+      { text: '首頁', link: '/' }, // 首页文件位于.vuepress/index.md
+      { text: '詩文',
         link: '/Poem/2-2/',
       //   items: [
       //     { text: '乙巳', link: '/Poem/1/' },
@@ -102,7 +102,7 @@ module.exports = {
       // },
 
 
-
+      /*
       {
         text: '前端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -189,13 +189,13 @@ module.exports = {
           { text: '标签', link: '/tags/' },
           { text: '归档', link: '/archives/' },
         ],
-      },
+      },*/
     ],
     sidebarDepth: 4, // 侧边栏显示深度，默认1，最大2（显示到h3标题）// （无效）
     logo: '/img/logo.jpg', // 导航栏logo
-    repo: 'tsuei/tsuei.github.io', // 导航栏右侧生成Github链接
+    // repo: 'tsuei/tsuei.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
-    lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
+    lastUpdated: false, // 需配合plugins里的一起才能关 开启更新时间，并配置前缀文字'上次更新'   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
     editLinks: false, //true, // 启用编辑
@@ -222,10 +222,10 @@ module.exports = {
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
-    // updateBar: { // 最近更新栏
-    //   showToArticle: false, // 显示到文章页底部，默认true
+    updateBar: { // 最近更新栏
+       showToArticle: false, // 显示到文章页底部，默认true
     //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },
+    },
     // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
     // pageButton: false, // 是否显示快捷翻页按钮，默认true
@@ -417,9 +417,9 @@ module.exports = {
         },
       },
     ],
-    */
+    
     [
-      '@vuepress/last-updated', // "上次更新"时间格式
+      '@vuepress/last-updated', // "上次更新"时间格式，需配合themeConfig里的一起才能关
       {
         transformer: (timestamp, lang) => {
           const dayjs = require('dayjs') // https://day.js.org/
@@ -427,6 +427,7 @@ module.exports = {
         },
       },
     ],
+    */
   ],
   
   markdown: { //抄自 https://blog.csdn.net/m0_50488756/article/details/123799709

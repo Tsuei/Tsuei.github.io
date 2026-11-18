@@ -365,6 +365,9 @@ export default {
         h1
           margin 0
           font-size 3.2rem
+
+          color #FFFFFF
+
         .description, .action
           margin 1.5rem auto
         .description
@@ -372,6 +375,9 @@ export default {
           font-size 1.1rem
           line-height 1.3
           opacity 0.9
+
+          color #FFFFFF
+          
         .action-button
           display inline-block
           font-size 1.2rem

@@ -18,6 +18,7 @@
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }"
       >{{ $siteTitle }}</span>
+    <!-- 
     </router-link>
 
     <div
@@ -34,6 +35,27 @@
         v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"
       />
       <NavLinks class="can-hide" />
+    </div>
+    -->
+    </router-link>
+
+    <!-- 导航选项紧跟网站名称 -->
+    <NavLinks class="can-hide" />
+
+    <!-- 搜索框仍然靠右 -->
+    <div
+      class="links"
+      :style="linksWrapMaxWidth ? {
+        'max-width': linksWrapMaxWidth + 'px'
+      } : {}"
+    >
+      <AlgoliaSearchBox
+        v-if="isAlgoliaSearch"
+        :options="algolia"
+      />
+      <SearchBox
+        v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"
+      />
     </div>
   </header>
 </template>
@@ -106,6 +128,11 @@ $navbar-horizontal-padding = 1.5rem
     font-weight 600
     color var(--textColor)
     position relative
+    
+  .nav-links
+    margin-left 35rem // 1.5rem
+    vertical-align top
+    
   .links
     padding-left 1.5rem
     box-sizing border-box
